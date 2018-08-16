@@ -16,7 +16,7 @@ exports.config = {
     'project': 'WebDriverIO Cucumberjs',
 
     'device': 'iPhone 7',
-    'app': 'bs://4e4ed262053979b0488ebe91920fb1f56e68d7ea',
+    'app': 'bs://APP_URL',
 
     'browserstack.local': true,
     'browserstack.debug': true
