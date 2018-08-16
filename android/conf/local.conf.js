@@ -17,7 +17,7 @@ exports.config = {
 
     'device': 'Google Pixel',
     'browserName': 'android',
-    'app': 'bs://784e83d7c6646664b31bf70ef585b91328d21dac',
+    'app': 'bs://APP_URL',
 
     'browserstack.local': true,
     'browserstack.debug': true
