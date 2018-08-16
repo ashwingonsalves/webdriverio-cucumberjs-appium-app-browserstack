@@ -15,7 +15,7 @@ exports.config = {
 
       'device': 'Samsung Galaxy S7',
       'browserName': 'android',
-      'app': 'bs://c411122a17b838f8ce5f325c67c4e969bcdee3c8',
+      'app': 'bs://APP_URL',
 
       'browserstack.debug': true
     }],
