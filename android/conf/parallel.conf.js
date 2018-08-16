@@ -1,6 +1,6 @@
 exports.config = {
-  user: process.env.BROWSERSTACK_DEMO_USER,
-  key: process.env.BROWSERSTACK_DEMO_KEY,
+  user: process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
+  key: process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACC_KEY',
   
     updateJob: false,
     specs: [
@@ -14,7 +14,7 @@ exports.config = {
       'build': 'WebDriverIO Cucumberjs Android',
       'project': 'WebDriverIO Cucumberjs',
       'browserName': 'android',
-      'app': 'bs://APP_URL',
+      'app': process.env.BROWSERSTACK_APP_ID || 'bs://<hashed app-id>',
 
       'browserstack.debug': true
     },
