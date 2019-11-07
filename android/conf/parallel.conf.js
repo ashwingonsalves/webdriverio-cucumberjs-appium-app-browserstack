@@ -20,11 +20,14 @@ exports.config = {
     },
   
     capabilities: [{
-      device: 'Google Pixel'
+      'device': 'Google Pixel 3a XL',
+      'os_version': '9.0'
     }, {
-      device: 'Samsung Galaxy S7'
+      'device': 'Samsung Galaxy S9',
+      'os_version': '8.0'
     }, {
-      device: 'Samsung Galaxy S6'
+      'device': 'Samsung Galaxy Note 10',
+      'os_version': '9.0'
     }],
   
     logLevel: 'verbose',
