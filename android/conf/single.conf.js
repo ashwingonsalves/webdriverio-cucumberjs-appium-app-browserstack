@@ -13,8 +13,8 @@ exports.config = {
       'build': 'WebDriverIO Cucumberjs Android',
       'project': 'WebDriverIO Cucumberjs',
 
-      'device': 'Samsung Galaxy S7',
-      'browserName': 'android',
+      'device': 'Samsung Galaxy S9',
+      'os_version': '8.0',
       'app': process.env.BROWSERSTACK_APP_ID || 'bs://<hashed app-id>',
 
       'browserstack.debug': true
