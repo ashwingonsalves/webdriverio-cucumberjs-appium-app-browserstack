@@ -15,8 +15,8 @@ exports.config = {
     'build': 'WebDriverIO Cucumberjs Android',
     'project': 'WebDriverIO Cucumberjs',
 
-    'device': 'Google Pixel',
-    'browserName': 'android',
+    'device': 'Samsung Galaxy S9 Plus',
+    'os_version': '8.0',
     'app': process.env.BROWSERSTACK_APP_ID || 'bs://<hashed app-id>',
 
     'browserstack.local': true,
@@ -64,7 +64,12 @@ exports.config = {
   },
 
   // Code to stop browserstack local after end of test
-  onComplete: function (capabilties, specs) {
-    exports.bs_local.stop(function() {});
-  }
+  onComplete: function (capabilties, specs) { 
+      return new Promise(function(resolve, reject){
+        exports.bs_local.stop(function() {
+          console.log("Local Testing connection terminated!");
+          resolve();
+        });
+      });
+    }
 };
